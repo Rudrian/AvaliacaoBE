@@ -1,5 +1,9 @@
 package com.avaliacao.Repository;
 
-public interface ClienteRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.avaliacao.Entity.Cliente;
+
+public interface ClienteRepository extends JpaRepository <Cliente, Long> {
 
 }
